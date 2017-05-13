@@ -11,20 +11,17 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.ios.deployment_target = '8.0'
   s.name         = "CameraResolutionHelper"
+  s.authors      = "Adrian Alvarez"
   s.version      = "1.0"
+  s.requires_arc = true
   s.summary      = "CameraResolutionHelper allows you to obtain resolutions of different cameras while maintaining the aspect ratio."
 
   s.homepage     = "https://github.com/adrianAlvarezFernandez/CameraResolutionHelper/blob/master/README.md"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
-  s.source       = { :git => "https://github.com/adrianAlvarezFernandez/CameraResolutionHelperPodSpecs.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/adrianAlvarezFernandez/CameraResolutionHelper.git", :tag => "#{s.version}" }
 
-
-
-  s.source_files  = "CameraResolutionHelper/**/*.{swift}"
-
-
-
+  s.source_files  = "CameraResolutionHelper/*.{swift}"
 
 end

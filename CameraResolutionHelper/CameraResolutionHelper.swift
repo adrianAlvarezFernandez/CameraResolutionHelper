@@ -17,6 +17,8 @@ public class CameraResolutionHelper {
     private static let resolution : String = "resolution"
     private static let preset : String = "preset"
     
+    public var we : String = "hola"
+    
     public let deviceModel : String
     
     public init(deviceModel : String) {
