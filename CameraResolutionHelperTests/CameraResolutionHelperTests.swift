@@ -10,6 +10,14 @@ import XCTest
 @testable import CameraResolutionHelper
 
 class CameraResolutionHelperTests: XCTestCase {
+
+    private let screen4inches : CGSize = CGSize(width: 320, height: 568)
+    private let screen47inches : CGSize = CGSize(width: 320, height: 568)
+    private let screen55inches : CGSize = CGSize(width: 375, height: 667)
+    private let iphone4InchesIdentifierExample : String = "iPhone5,1"
+    
+    private let iphone47InchesIdentifierExample : String = "iPhone8,1"
+    private let iphone55InchesIdentifierExample : String = "iPhone8,2"
     
     override func setUp() {
         super.setUp()
@@ -20,17 +28,32 @@ class CameraResolutionHelperTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+
+    func testiPhone4InchesInGroupiPhone567CameraRetrieves() {
+        
+        let resolutions = CameraResolutionHelper.getResolutionWithSameAspectRatioAsView(deviceModel: iphone4InchesIdentifierExample, sizeOfView: screen4inches)
+        let backCameraResolution : String = resolutions?.value(forKey: "back") as! String
+        let frontCameraResolution : String = resolutions?.value(forKey: "front") as! String
+        
+        
+        XCTAssertEqual(backCameraResolution, "AVCaptureSessionPresetHigh")
+        
+        XCTAssertEqual(frontCameraResolution, "AVCaptureSessionPreset1280x720")
+        
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+//    func testiPhone47InchesInGroupiPhone567CameraRetrieves() {
+//        
+//        let resolutions = CameraResolutionHelper.getResolutionWithSameAspectRatioAsView(deviceModel: iphone4InchesIdentifierExample, sizeOfView: screen47inches)
+//        let backCameraResolution : String = resolutions?.value(forKey: "back") as! String
+//        let frontCameraResolution : String = resolutions?.value(forKey: "front") as! String
+//        
+//        
+//        XCTAssertEqual(backCameraResolution, "AVCaptureSessionPresetHigh")
+//        
+//        XCTAssertEqual(frontCameraResolution, "AVCaptureSessionPreset1280x720")
+//        
+//    }
+    
     
 }

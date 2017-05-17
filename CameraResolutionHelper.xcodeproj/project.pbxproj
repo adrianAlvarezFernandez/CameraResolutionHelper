@@ -14,6 +14,7 @@
 		E9B4A16D1EC787EF007EB6F7 /* CameraResolutionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B4A16A1EC787EF007EB6F7 /* CameraResolutionHelper.swift */; };
 		E9B4A16E1EC787EF007EB6F7 /* DeviceResolutions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B4A16B1EC787EF007EB6F7 /* DeviceResolutions.swift */; };
 		E9B4A16F1EC787EF007EB6F7 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B4A16C1EC787EF007EB6F7 /* UIDeviceExtension.swift */; };
+		E9B8AC051ECC252D00FC486E /* AKStompClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9B8AC041ECC252D00FC486E /* AKStompClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		E9B4A16A1EC787EF007EB6F7 /* CameraResolutionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraResolutionHelper.swift; sourceTree = "<group>"; };
 		E9B4A16B1EC787EF007EB6F7 /* DeviceResolutions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceResolutions.swift; sourceTree = "<group>"; };
 		E9B4A16C1EC787EF007EB6F7 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
+		E9B8AC041ECC252D00FC486E /* AKStompClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKStompClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		E9B4A1521EC7865D007EB6F7 /* CameraResolutionHelper */ = {
 			isa = PBXGroup;
 			children = (
+				E9B8AC041ECC252D00FC486E /* AKStompClient.swift */,
 				E9B4A16A1EC787EF007EB6F7 /* CameraResolutionHelper.swift */,
 				E9B4A16B1EC787EF007EB6F7 /* DeviceResolutions.swift */,
 				E9B4A16C1EC787EF007EB6F7 /* UIDeviceExtension.swift */,
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9B8AC051ECC252D00FC486E /* AKStompClient.swift in Sources */,
 				E9B4A16F1EC787EF007EB6F7 /* UIDeviceExtension.swift in Sources */,
 				E9B4A16D1EC787EF007EB6F7 /* CameraResolutionHelper.swift in Sources */,
 				E9B4A16E1EC787EF007EB6F7 /* DeviceResolutions.swift in Sources */,

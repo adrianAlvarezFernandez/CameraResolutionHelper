@@ -9,22 +9,8 @@
 import Foundation
 import AVFoundation
 
-
 public class CameraResolutionHelper {
-
-    private static let frontCamera : String = "frontCamera"
-    private static let backCamera : String = "backCamera"
-    private static let resolution : String = "resolution"
-    private static let preset : String = "preset"
     
-    public var we : String = "hola"
-    
-    public let deviceModel : String
-    
-    public init(deviceModel : String) {
-        self.deviceModel = deviceModel
-    }
-
     public static func getResolutionWithSameAspectRatioAsView(deviceModel : String, sizeOfView : CGSize) -> NSDictionary? {
         
         let viewAspectRatio : Double = Double(sizeOfView.height / sizeOfView.width).roundTo(places: 2)
