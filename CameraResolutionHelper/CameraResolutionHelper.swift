@@ -11,12 +11,15 @@ import AVFoundation
 
 public class CameraResolutionHelper {
     
+    public static var we = "hola"
+    
     public static func getResolutionWithSameAspectRatioAsView(deviceModel : String, sizeOfView : CGSize) -> NSDictionary? {
         
         let viewAspectRatio : Double = Double(sizeOfView.height / sizeOfView.width).roundTo(places: 2)
         let dict = NSMutableDictionary()
         let deviceResolutions = CameraResolutions.retrieveResolution(deviceModel: deviceModel)
         
+//        static var hola = "2"
         
         var maxResolution : Double = 0
         if let resolutions = deviceResolutions {

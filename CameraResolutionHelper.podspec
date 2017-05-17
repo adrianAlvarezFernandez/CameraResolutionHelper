@@ -24,4 +24,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "CameraResolutionHelper/*.{swift}"
 
+  # s.dependency 'SocketRocket', :git => 'https://github.com/tananaev/SocketRocket.git', :tag => '0.5.1'
+  s.dependency 'SocketRocket', '~> 0.5.1'
+
 end
